@@ -1,21 +1,27 @@
-# Step 1:
+# Requirements:
 
 Sign up for Twitter Developer
 Sign up for Twitch Developer
 
-# Step 2:
+Initialize apps and get keys from Twitch and Twitter.
 
-Initialize apps and get keys
+# Idea:
 
-# Step 3:
+Send a request using Twitch's API in order to retreive information about the streamer we are looking up.
+If he is live, we Tweet using the Twitter API about him, where we add details such as the game he is playing, the title and the link.
+Finally, everything is logged in log.txt in order to keep track of all tweets, as well as when the program is exited.
+There are multiple streamers with their usernames stored in a JSON file. We loop through each one and tweet on one same account.
 
-Create code to send request to twitch to verify if stream is online.
-How to proceed:
-Send a stream request to twich with userID
-If response is not null, return true --> Online
-Else it is offline, move on to the next streamer.
+# Room for development:
 
-# Step 4:
+We could, in addition to tweeting from the main account, add a feature to retweet from the personal account of each user. We would then have two interactions with the Twitter servers but from 2 different accounts.
 
-Create code to tweet if user is online.
-Tweet only on one account, with different links and usernames.
+# Libraries used:
+
+tweepy => To use the Twitter API
+twitch-info => To use the Twitch API
+decouple => To extract info from the .env file
+emoji => To turn emojis into strings and vice versa in order to manipulate titles without encountering exceptions
+logging => To log all data
+json => To read from JSON
+atexit => To execute function when exiting program
