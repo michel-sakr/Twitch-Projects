@@ -18,10 +18,10 @@ We could, in addition to tweeting from the main account, add a feature to retwee
 
 # Libraries used:
 
-tweepy => To use the Twitter API \n
-twitch-info => To use the Twitch API \n
-decouple => To extract info from the .env file \n
-emoji => To turn emojis into strings and vice versa in order to manipulate titles without encountering exceptions \n
-logging => To log all data \n
-json => To read from JSON \n
-atexit => To execute function when exiting program \n
+tweepy => To use the Twitter API ||
+twitch-info => To use the Twitch API ||
+decouple => To extract info from the .env file ||
+emoji => To turn emojis into strings and vice versa in order to manipulate titles without encountering exceptions ||
+logging => To log all data ||
+json => To read from JSON ||
+atexit => To execute function when exiting program
